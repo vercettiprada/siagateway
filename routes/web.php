@@ -17,6 +17,10 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
+$router->get('/version', function () use ($router) {
+    return $router->app->version();
+});
+
 //🔒🔒🔑
 
 $router->group(['prefix' => 'api'], function () use ($router) {
@@ -27,9 +31,7 @@ $router->group(['prefix' => 'api'], function () use ($router) {
     $router->post('user-profile', 'AuthController@me');
 });
 
-$router->get('/version', function () use ($router) {
-    return $router->app->version();
-});
+
 
 $router->group(['middleware' => 'auth:api'], function () use ($router) {
 
