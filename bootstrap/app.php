@@ -107,6 +107,7 @@ $app->router->group([
     require __DIR__.'/../routes/web.php';
 });
 
+
 /*
 |--------------------------------------------------------------------------
 | Register Service Container Bindings
