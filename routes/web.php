@@ -33,3 +33,5 @@ $router->get('/users2/{id}', 'User2Controller@show');       // get user by id
 $router->put('/users2/{id}', 'User2Controller@update');     // update user record
 $router->patch('/users2/{id}', 'User2Controller@update');   // update user record
 $router->delete('/users2/{id}', 'User2Controller@delete');  // delete record
+
+
