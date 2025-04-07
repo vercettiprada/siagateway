@@ -17,6 +17,9 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
+$router->get('/version', function () use ($router) {
+    return $router->app->version();
+});
 
 // API GATEWAY ROUTES FOR SITE1 users
 $router->get('/users1', 'User1Controller@index');
