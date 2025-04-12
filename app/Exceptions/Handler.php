@@ -10,6 +10,7 @@ use Illuminate\Http\Response; // <-- Import added
 use Illuminate\Validation\ValidationException;
 use Laravel\Lumen\Exceptions\Handler as ExceptionHandler;
 use Symfony\Component\HttpKernel\Exception\HttpException;
+use GuzzleHttp\Exception\ClientException;
 use Throwable;
 
 class Handler extends ExceptionHandler
